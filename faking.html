@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Type anthing slowly</h2>
+<script>
+  let a=["T,O,I,L,A,D,U,A,T,H,O,N,G,M,I,N,H"];
+  let n="";
+  function type(){
+      t=document.f.txt.value;
+      j=t.length;
+      if(j>0){
+          for(let i=1;i<=j;i++){
+              n=n+a[i];
+              if(i==a[0]){
+                  document.f.txt.value="";
+                  n="";
+              }
+          }
+      }
+      document.f.txt.value=n;
+      n="";
+      setTimeout("type()",0);
+      //return false;
+  }
+</script>
+</body>
+<center>
+    <h2>type anthing slowly</h2>
+    <form name="f">
+        <textarea name="txt" cols="40" rows="10" onkeydown="type();"></textarea>
+    </form>
+</center>
+</html>
