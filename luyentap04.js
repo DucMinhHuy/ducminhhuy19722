@@ -5,9 +5,9 @@
 //         let value = +prompt("enter vao gia tri" + (i + 1));
 //         document.write(value);
 //     }
-//     value.reverse(value);
-//
+// array.reverse(value);
 // document.write(value);
+
 let array=[2,3,4,5,6];
 array.reverse();
 console.log(array);
